@@ -2,9 +2,14 @@
 // Token HF nằm trong file .env ở phía server, KHÔNG đưa vào code frontend.
 // Chạy: npm start  (cần Node 20.6 trở lên)
 
-const http = require("http");
-const fs = require("fs");
-const path = require("path");
+// const http = require("http");
+// const fs = require("fs");
+// const path = require("path");
+
+import http from "http";
+import fs from "fs";
+import path from "path";
+import { __dirname, __filename } from './config.js';
 
 const PORT = process.env.PORT || 3000;
 const HF_TOKEN = process.env.HF_TOKEN;
